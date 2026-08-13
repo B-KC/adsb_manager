@@ -73,6 +73,14 @@ MAP_PROBES: list[dict[str, object]] = [
         "units": ("adsbexchange-feed",),
     },
     {
+        # Optional tar1090 instance from the airplanes.live feed client:
+        # https://github.com/airplanes-live/feed  →  http://<pi>/airplanes
+        "name": "airplanes.live",
+        "probe": "http://127.0.0.1/airplanes/",
+        "public": "http://{host}/airplanes/",
+        "units": ("airplanes-feed",),
+    },
+    {
         "name": "graphs1090",
         "probe": "http://127.0.0.1/graphs1090/",
         "public": "http://{host}/graphs1090/",
@@ -106,6 +114,7 @@ UNIT_TO_MAP: dict[str, str] = {
     "tar1090": "tar1090",
     "graphs1090": "graphs1090",
     "adsbexchange-feed": "ADS-B Exchange",
+    "airplanes-feed": "airplanes.live",
     "fr24feed": "FlightRadar24",
     "pfclient": "Plane Finder",
 }
