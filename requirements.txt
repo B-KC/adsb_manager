@@ -1,0 +1,4 @@
+paramiko>=3.0
+
+# Optional — only needed to build the Windows exe / wheels:
+#   pip install -e ".[build]"

@@ -1,0 +1,68 @@
+# Bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / PyInstaller output (share via GitHub Releases, not git)
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+*.tar.gz
+*.manifest
+*.spec.bak
+
+# Built binaries (if someone copies them out of dist/)
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Local app state — host/user prefs, crash logs (never the password, but still personal)
+.adsb_manager/
+settings.json
+crash.log
+*.log
+
+# Secrets / machine-local overrides
+.env
+.env.*
+!.env.example
+*.local
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Grok / agent session scratch
+.grok/
